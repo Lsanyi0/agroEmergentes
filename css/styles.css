@@ -1,0 +1,142 @@
+*{
+    color:white;
+}
+
+.hr {
+    width: 95%;
+    height: 1px;
+    margin-top: 10%;
+    background-color: black;
+}
+
+/*Texto*/
+.titulo {
+    color: white;
+    text-shadow: 2px 2px 0px black;
+}
+
+.textoN {
+    color: black;
+}
+/*Barra de navegación principal*/
+.barraNavP {
+    background-color: #272727;
+
+}
+
+.tittle {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+/*Barra de navegación secundaria*/
+.barraNavS {
+    background-color:#7b828e;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    margin-right: 10px;
+}
+
+.imagen {
+    height: 50%;
+    width: 40%;
+    background-color: #ffffff;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin: 0% auto;
+    margin-top: 20px;
+}
+
+.imagenM {
+    height: 50%;
+    width: 50%;
+    background-color: #ffffff;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin: 0% auto;
+    margin-top: 20px;
+}
+
+.usuario {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.menu {
+    background-color: #7b828e;
+    height: 40px;
+    width: 90%;
+    margin: 0% auto;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.menu:hover {
+    background-color: #d5dfef;
+    color:black;
+}
+
+.pill {
+    background-color: #d5dfef; 
+    color: black;
+}
+
+.disabled-item {
+    background-color: #7b828e;
+    color: black;
+}
+
+.disabled-item:hover {
+    background-color: #7b828e;
+    color: black;
+}
+/*Contenido*/
+.contenido {
+    color: black;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+/*Formulario*/
+.formulario {
+    margin-left: 4%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #b3becf;
+    /*background-color: #26bbeb8f;*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.fondoI {
+    background-color: #7b828e57;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/*Controles*/
+.producto {
+    width: 50%;
+}
+
+.botones {
+    margin-top: 10%;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.botonesM {
+    width: 100%;
+    margin-top: 15.5%;
+}
+
+
