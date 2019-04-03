@@ -39,8 +39,8 @@
                     
                     <div class="row">
                             <div class="form-group col-md-6">
-                              <label for="Cantidad" class="textoN">Proveedor</label>
-                              <select class="form-control textoN" id="Cantidad">
+                              <label for="listBuscar" class="textoN">Proveedor</label>
+                              <select class="list-group" id="listBuscar">
                                 <option class="textoN">1</option>
                                 <option class="textoN">2</option>
                                 <option class="textoN">3</option>
@@ -50,16 +50,16 @@
                             </div>
                             <div class="col-md-3"></div>
                             <div class="form-group col-md-3">
-                                    <button type="button" class="btn btn-outline-dark botonesM">Añadir Proveedor</button> 
+                                    <button type="button" class="btn btn-outline-dark botonesM" id="btnAddProveedor" >Añadir Proveedor</button> 
                             </div>
                     </div>
                     <div class="form-group">
-                      <label for="cliente" class="textoN">Representante</label>
-                      <input type="email" class="form-control" id="cliente">
+                      <label for="txtrepresentante" class="textoN">Representante</label>
+                      <input type="text" class="form-control" id="txtrepresentante">
                     </div>
                     <div class="form-group">
-                      <label for="Buscar" class="textoN">Buscar</label>
-                      <select multiple class="form-control" id="Buscar">
+                      <label for="listProductos" class="textoN">Buscar</label>
+                      <select multiple class="list-group" id="listProductos">
                         <option class="textoN">Producto 1</option>
                         <option class="textoN">Producto 2</option>
                         <option class="textoN">Producto 3</option>
@@ -69,15 +69,15 @@
                     </div>
                     <div class="row">
                             <div class="form-group col-md-5">
-                              <label for="Producto" class="textoN">Producto</label>
-                              <input type="email" class="form-control producto" id="Producto">
+                              <label for="txtProducto" class="textoN">Producto</label>
+                              <input type="text" class="form-control producto" id="txtProducto">
                             </div>
                             <div class="form-group col-md-2">
-                              <label for="Cantidad" class="textoN">Cantidad</label>
-                              <input type="number" min="1" class="form-control producto" id="Producto">
+                              <label for="txtCantidad" class="textoN">Cantidad</label>
+                              <input type="number" min="1" class="form-control producto" id="txtCantidad">
                           </div> <div class="form-group col-md-5">
-                            <label for="Producto" class="textoN">Precio</label>
-                            <input type="money" class="form-control producto" id="Producto">
+                            <label for="txtPrecio" class="textoN">Precio</label>
+                            <input type="number" class="form-control producto" id="txtPrecio">
                           </div>
                         </div>
 
@@ -104,11 +104,11 @@
 
                     <div class="form-group row botones">
                       <div class="col-md-2"></div>
-                      <button type="button" class="btn btn-info col-md-2">Agregar</button>
+                      <button type="button" class="btn btn-info col-md-2" id="btnAgregar">Agregar</button>
                       <div class="col-md-1"></div>
-                      <button type="button" class="btn btn-secondary col-md-2">Comprar</button>
+                      <button type="button" class="btn btn-secondary col-md-2" id="btnComprar">Comprar</button>
                       <div class="col-md-1"></div>
-                      <button type="button" class="btn btn-danger col-md-2">Cancelar</button>
+                      <button type="button" class="btn btn-danger col-md-2" id="btnCancelar">Cancelar</button>
                       <div class="col-md-2"></div>
                     </div>
                 </form>
