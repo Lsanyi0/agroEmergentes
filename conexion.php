@@ -1,13 +1,15 @@
 <?php 
 $conn=new mysqli("127.0.0.1","root","","LasPalmeras");
-$usuarioA= GLOBAL $usuario;
+GLOBAL $usuario;
+$usuarioA = $usuario;
 function openCon (){
 GLOBAL $conn;
 if ($conn->connect_error) {
     die("Error de conexion:".$conn->connect_error);
 }
 
-print "Conexión exitosa!\n";
+#print "Conexión exitosa!\n";
+
 
 }
 
