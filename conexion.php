@@ -1,6 +1,6 @@
 <?php 
 $conn=new mysqli("127.0.0.1","root","","LasPalmeras");
-
+$usuarioA= GLOBAL $usuario;
 function openCon (){
 GLOBAL $conn;
 if ($conn->connect_error) {
@@ -22,6 +22,7 @@ $resultado=$conn->query($sql);
 
 if ($resultado->num_rows > 0) {
     header('Location: ../Usuarios/ventas.php');
+    
 }
 else{
 
