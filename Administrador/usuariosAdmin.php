@@ -33,59 +33,55 @@
     <!--Formulario-->
     <div class="col-md-8 formulario" style="padding-top: 20px;">
         <form>
-                <h3 class="titulo" align="center">Control de usuarios</h3>
-                <hr>
-                <table class="table table-striped table-dark">
-                        <thead class="thead-dark">
-                          <tr>
-                            <th scope="col">N°</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Apellido</th>
-                            <th scope="col">Usuario</th>
-                            <th scope="col">DUI</th>
-                            <th scope="col">Salario</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>mark.O</td>
-                            <td>212121212-8</td>
-                            <td>$200.00</td>
-                          </tr>
-                        </tbody>
-                      </table>
+        <h3 class="titulo" align="center">Venta</h3>
+            <hr>
+            <div class="form-group">
+              <label class="textoN">Venta N°0001</label>
+            </div>
+            <?php
+              
+            ?>
+                            <div class="form-group">
+                              <label for="listBuscar" class="textoN">Proveedor</label>
+                              <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>Choose...</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                              </select>
+                            </div>
+            <div class="form-group">
+              <label for="txtcliente" class="textoN">Cliente</label>
+              <input type="text" class="form-control" id="txtcliente">
+            </div>
+            <div class="row">
+                <div class="form-group col-md-5">
+                  <label for="txtProducto" class="textoN">Producto</label>
+                  <input type="text" class="form-control producto" id="txtProducto">
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="txtCantidad" class="textoN">Cantidad</label>
+                  <input type="number" min="1" class="form-control producto" id="txtCantidad">
+               </div>
+            </div>
+            <div class="form-group">
+              <label for="listBuscar" class="textoN">Buscar</label>
+              <select multiple class="list-group" id="listBuscar">
+                <option class="textoN">Producto 1</option>
+                <option class="textoN">Producto 2</option>
+                <option class="textoN">Producto 3</option>
+                <option class="textoN">Producto 4</option>
+                <option class="textoN">Producto 5</option>
+              </select>
+            </div>
 
                       <div class="form-group row botones">
                             <div class="col-md-2"></div>
-                            <button type="button" data-target="#change" data-toggle="modal" class="btn btn-info col-md-3" id="btnModificar">Modificar</button>
+                            <button type="button" class="btn btn-info col-md-3" id="btnModificar">Modificar</button>
                             <div class="col-md-2"></div>
                             <button type="button" class="btn btn-danger col-md-3" id="btnCancelar">Cancelar</button>
                             <div class="col-md-2"></div>
                       </div>
-
-<!--Cambios a usuario -->
-<div class="modal" id="change" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
    </form>
