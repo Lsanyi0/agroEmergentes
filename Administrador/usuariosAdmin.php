@@ -32,53 +32,57 @@
         </div>
     <!--Formulario-->
     <div class="col-md-8 formulario" style="padding-top: 20px;">
-        <form>
-        <h3 class="titulo" align="center">Venta</h3>
+        <form action="./administracion.php" id="usuarios" method="POST">
+        <h3 class="titulo" align="center">Agregar usuario</h3>
             <hr>
-            <div class="form-group">
-              <label class="textoN">Venta N°0001</label>
-            </div>
-            <?php
-              include 'administracion';
-              echo usuarios();
-            ?>
+            
                             <div class="form-group">
-                              <label for="listBuscar" class="textoN">Proveedor</label>
-                              <select class="custom-select" id="inputGroupSelect01">
-                                  <option selected>Choose...</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
+                              <label for="listBuscar" class="textoN">Tipo de usuario</label>
+                              <select class="custom-select" name="tipo[]">
+                                  <option value="1" class="textoN">Normal</option>
+                                  <option value="2" class="textoN">Privilegios</option>
                               </select>
                             </div>
-            <div class="form-group">
-              <label for="txtcliente" class="textoN">Cliente</label>
-              <input type="text" class="form-control" id="txtcliente">
+                            <div class="row">
+                <div class="form-group col-md-5">
+                  <label for="txtProducto" class="textoN">Nombre</label>
+                  <input type="text" name="nombre" class="form-control producto">
+                </div>
+                <div class="form-group col-md-5">
+                  <label for="txtCantidad" class="textoN">Apellido</label>
+                  <input type="text" name="apellido" class="form-control producto" >
+               </div>
             </div>
             <div class="row">
                 <div class="form-group col-md-5">
-                  <label for="txtProducto" class="textoN">Producto</label>
-                  <input type="text" class="form-control producto" id="txtProducto">
+                  <label for="txtProducto" class="textoN">Usuario</label>
+                  <input type="text" name="usuario" class="form-control producto">
                 </div>
-                <div class="form-group col-md-2">
-                  <label for="txtCantidad" class="textoN">Cantidad</label>
-                  <input type="number" min="1" class="form-control producto" id="txtCantidad">
+                <div class="form-group col-md-5">
+                  <label for="txtCantidad" class="textoN">Contraseña</label>
+                  <input type="text" name="constrasena" class="form-control producto">
                </div>
             </div>
+            <div class="row">
+            <div class="form-group col-md-5">
+                  <label for="txtCantidad" class="textoN">Telefono</label>
+                  <input type="tel" name="telefono" class="form-control producto">
+            </div>
+            </div>
             <div class="form-group">
-              <label for="listBuscar" class="textoN">Buscar</label>
-              <select multiple class="list-group" id="listBuscar">
-                <option class="textoN">Producto 1</option>
-                <option class="textoN">Producto 2</option>
-                <option class="textoN">Producto 3</option>
-                <option class="textoN">Producto 4</option>
-                <option class="textoN">Producto 5</option>
-              </select>
+                  <label for="txtCantidad" class="textoN">DUI</label>
+                  <input type="text" name="dui" class="form-control producto">
+            </div>
+            <div class="row">
+            <div class="form-group col-md-5">
+                  <label for="txtCantidad" class="textoN">Salario</label>
+                  <input type="text" name="salario" class="form-control producto">
+            </div>
             </div>
 
                       <div class="form-group row botones">
                             <div class="col-md-2"></div>
-                            <button type="button" class="btn btn-info col-md-3" id="btnModificar">Modificar</button>
+                            <input type="submit" class="btn btn-info col-md-3" value="Crear" id="btnModificar">
                             <div class="col-md-2"></div>
                             <button type="button" class="btn btn-danger col-md-3" id="btnCancelar">Cancelar</button>
                             <div class="col-md-2"></div>

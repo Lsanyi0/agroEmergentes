@@ -40,5 +40,31 @@ function getConn(){
     else{
         return $conn;
     }
+function usuariosA ($sql){
+GLOBAL $conn;
+$usuarios;
+$n=0;
+$resultado=$conn->query($sql);
+while($datos = $resultado->fetch_assoc())
+{
+    $usuarios[$n]=$datos['Usuarios'];
+    $n++;
+    echo $usuarios[$n];
+}
+}
+
+function crearUsu (){
+    GLOBAL $conn;
+    $resultado=$conn->query($sql);
+    
+    if($result){
+           
+        print "funco";
+        header('Location: ./indexAdmin.php');
+       }
+       else{
+           print "no funco";
+       }
+
 }
 ?>
