@@ -1,24 +1,28 @@
 <?php 
-$conn = mysqli_connect("127.0.0.1", "root", "", "LasPalmeras");
+$conn=new mysqli("127.0.0.1","root","","LasPalmeras");
+
 function openCon (){
-if ($conn->connect_error)
-    die($conn->connect_error);
+GLOBAL $conn;
+if ($conn->connect_error) {
+    die("Error de conexion:".$conn->connect_error);
+}
 
 print "Conexión exitosa!\n";
 
-exit(1);
 }
-function closeCon (){
-    mysqli_close($conn);
-}
-function Login (){
-openCon();
-$usuario=$_GET["usuario"];
-$contrasena=$_GET["contrasena"];
-    $sql ="Select Login();";
-    $q = $conn->query($sql);
-    $q->setFetchMode
 
+function closeCon (){
+GLOBAL $conn;    
+    $conn->close();
+}
+
+function Login ($sql){
+GLOBAL $conn;
+$query=$sql;
+$resultado=$conn->query($query);
+
+$dato=($resultado->fetch_assoc());
+echo $dato;
 }
 
 ?>
