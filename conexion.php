@@ -18,11 +18,16 @@ GLOBAL $conn;
 
 function Login ($sql){
 GLOBAL $conn;
-$query=$sql;
-$resultado=$conn->query($query);
+$resultado=$conn->query($sql);
 
-$dato=($resultado->fetch_assoc());
-echo $dato;
+if ($resultado->num_rows > 0) {
+    header('Location: ../Usuarios/ventas.php');
+}
+else{
+
 }
 
+}
+
+    
 ?>

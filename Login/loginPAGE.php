@@ -34,8 +34,7 @@ function login(usuario, contrasena){
 </script> -->
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="login.js"></script> -->
-<body class="text-center">
-    <form class="form-signin" action="login.php" id="login" method="POST">
+<form class="form-signin" action="login.php" id="login" method="POST">
         <img class="mb-4" src="../img/palmera.png" alt width="72" alt height="72">
         <h1 class="h3 mb-3 font-weight-normal">Inicio de sesión</h1>
         <label for="txtUsu" class="sr-only">Correo electronico</label>
@@ -47,7 +46,7 @@ function login(usuario, contrasena){
                 <input type="checkbox" name="cbRemember" id="checkbRemember" value="Recordarme"> Recordarme
             </label>
         </div>
-        <input class="btn btn-lg btn-primary btn-block" id="btnIniciar" type="submit" value="Iniciar Sesión">
+        <input class="btn btn-lg btn-primary btn-block" name="btnIniciar" type="submit" value="Iniciar Sesión">
         <p class="mt-5 mb-3 text-muted">© 2019 AsTech</p>
         <i class="fa fa-facebook-official"></i>
         <i class="fa fa-instagram" aria-hidden="true"></i>

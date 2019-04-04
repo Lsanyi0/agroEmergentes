@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="./lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../lib/css/bootstrap.min.css">
     <title>Las palmeras</title>
 </head>
 <body>
     <!-- Barra de navegación principal-->
         <nav class="navbar navbar-light barraNavP">
                 <a class="navbar-brand" href="#">
-                  <img src="img/palmera.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                  <img src="../img/palmera.png" width="30" height="30" class="d-inline-block align-top" alt="">
                   <h5 class="tittle d-inline-block align-right">Las Palmeras</h5>
                 </a>
                 <a style="text-decoration: none; color: white; font-size: 8" href="#">Cerrar Sesión</a>
@@ -23,7 +23,7 @@
     <div class="col-md-3">
     <nav class="nav flex-column nav-pills barraNavS">
         <div style="height:30%; wight:100%; text-align:center">
-                <img src="img/usuario.png"  class="imagen" alt="">
+                <img src="../img/usuario.png"  class="imagen" alt="">
                 <div class="usuario">Usuario</div>
         </div>
             <a class="nav-link pill  menu" href="index.html">Vender</a>

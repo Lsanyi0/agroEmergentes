@@ -3,7 +3,6 @@ include '..\conexion.php';
 echo openCon();
 $usuario=$_POST['txtUsu'];
 $contrasena=$_POST['txtPass'];
-print $usuario;
 /*
 var_dump($_POST);
 */
@@ -21,5 +20,6 @@ $sql="Select usuario from Usuario where contrasena='$contrasena' and usuario='$u
     }
  */
 echo Login($sql);
+
         
 ?>
