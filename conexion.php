@@ -1,5 +1,5 @@
 <?php 
-$conn=new mysqli("127.0.0.1","root","","LasPalmeras");
+$conn=new mysqli("127.0.0.1","root","resident00RE","agroe");
 GLOBAL $usuario;
 $usuarioA = $usuario;
 function openCon (){
@@ -27,15 +27,18 @@ if ($resultado->num_rows > 0) {
     
 }
 else{
-    header('Location: ./Login/login.php');
+    header('Location: ../Login/login.php');
 }
 
 }
 
-function usuariosA ($sql){
-GLOBAL $conn;
-$resultado=$conn->query($sql)
+function getConn(){
+    GLOBAL $conn;
+    if ($conn->connect_error) {
+        die("Error de conexion:".$conn->connect_error);
+    }
+    else{
+        return $conn;
+    }
 }
-
-    
 ?>

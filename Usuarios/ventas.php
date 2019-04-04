@@ -15,7 +15,7 @@
                   <img src="../img/palmera.png" width="30" height="30" class="d-inline-block align-top" alt="">
                   <h5 class="tittle d-inline-block align-right">Las Palmeras</h5>
                 </a>
-                <a style="text-decoration: none; color: white; font-size: 8" href="#">Cerrar Sesión</a>
+                <a style="text-decoration: none; color: white; font-size: 8" href="../Login/loginPAGE.php">Cerrar Sesión</a>
         </nav>
     <!--Contenido-->
     <div class="row contenido">
