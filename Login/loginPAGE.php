@@ -34,11 +34,11 @@ function login(usuario, contrasena){
 </script> -->
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="login.js"></script> -->
-<form class="form-signin" action="login.php" id="login" method="POST">
+<form class="form-signin" align="center" action="login.php" id="login" method="POST">
         <img class="mb-4" src="../img/palmera.png" alt width="72" alt height="72">
         <h1 class="h3 mb-3 font-weight-normal">Inicio de sesión</h1>
         <label for="txtUsu" class="sr-only">Correo electronico</label>
-        <input type="text" name="txtUsu" class="form-control" value="" placeholder="Correo Electronico" required autofocus>
+        <input type="text" name="txtUsu" class="form-control" value="" placeholder="Usuario" required autofocus>
         <label for="txtPass" class="sr-only">Contraseña</label>
         <input type="password" name="txtPass" class="form-control" values="" placeholder="Contraseña" required>
         <div class="checkbox mb-3">

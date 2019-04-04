@@ -27,9 +27,14 @@ if ($resultado->num_rows > 0) {
     
 }
 else{
+    header('Location: ./Login/login.php');
+}
 
 }
 
+function usuariosA ($sql){
+GLOBAL $conn;
+$resultado=$conn->query($sql)
 }
 
     

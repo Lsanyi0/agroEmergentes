@@ -39,7 +39,8 @@
               <label class="textoN">Venta N°0001</label>
             </div>
             <?php
-              
+              include 'administracion';
+              echo usuarios();
             ?>
                             <div class="form-group">
                               <label for="listBuscar" class="textoN">Proveedor</label>
