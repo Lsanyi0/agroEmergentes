@@ -1,7 +1,7 @@
 <?php
-include '../conexion.php';
-echo openCon();
-GLOBAL $conn;
+include '../Controllers/conexion.php';
+$connex = new connection;
+$conn = $connex->getConnection();
 $usuario=$_POST['usuario'];
 $nombre=$_POST['nombre'];
 $apellido=$_POST['apellido'];
@@ -11,13 +11,15 @@ $dui=$_POST['dui'];
 $tipo=$_POST['tipo'];
 
 
-$sql="Insert into Usuario (nombre, apellido, usuario, contrasena) values ('$nombre', '$apellido', '$usuario', '$contrasena')";
-echo $sql;
-echo crearUsu($sql);
-           
-    function usuarios (){
-        include '..\conexion.php';
-        echo openCon();
-        echo usuariosA("Select CONCAT(nombre, '', apellido) as Usuarios from Usuarios;");
-    }
+$sql="INSERT into Usuario (nombre, apellido, usuario, contrasena, tipoUsuario) values ('$nombre', '$apellido', '$usuario', '$contrasena',$tipo[0])";
+$sqlo="SELECT usuario FROM Usuario WHERE usuario ='$usuario';";
+$resultado = $conn->query($sqlo);
+print_r($tipo);
+/* if ($resultado >= 1)
+{
+    $connex->printError("El nombre de usuario ya existe");
+}
+else if ($resultado < 1 && $resultado > 0){
+    $conn->query($sql);
+} */
 ?>

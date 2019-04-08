@@ -1,9 +1,9 @@
 <?php
 class connection
 {
-    private $user ;
+    private $user;
     private $host;
-    private $pass ;
+    private $pass;
     private $db;
     public $conn;
 
@@ -17,8 +17,8 @@ class connection
     }
     public function connect()
     {
-        $this->conn = new mysqli( $this->host,$this->user, $this->pass, $this->db);
-        if ($this->conn->connect_error){
+        $this->conn = new mysqli($this->host, $this->user, $this->pass, $this->db);
+        if ($this->conn->connect_error) {
             exit('Error al conectar con la base de datos');
         }
     }
@@ -27,27 +27,17 @@ class connection
     {
         return $this->conn;
     }
-    public function Login($sql)
-    {
-        $resultado = $this->conn->query($sql);
-
-        if ($resultado->num_rows == 1) {
-            header('Location: ../Usuarios/ventas.php');
-        } else {
-            $this->printError('Error, usuario o clave incorrectos');
-        }
-    }
 
     public function usuariosA($sql)
     {
-    // $usuarios;
+        // $usuarios;
         $n = 0;
         $resultado = $this->conn->query($sql);
         while ($datos = $resultado->fetch_assoc()) {
-                $usuarios[$n] = $datos['Usuarios'];
-                $n++;
-                echo $usuarios[$n];
-            }
+            $usuarios[$n] = $datos['Usuarios'];
+            $n++;
+            echo $usuarios[$n];
+        }
     }
 
     public function crearUsu($sql)
@@ -63,9 +53,8 @@ class connection
         }
     }
 
-    private function printError($error)
+    public function printError($error)
     {
-        echo '<a style="color:red">'.$error.'</a>';
+        echo '<a style="color:red">' . $error . '</a>';
     }
 }
-?>

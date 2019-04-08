@@ -1,5 +1,5 @@
 <?php
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
+    if(isset($_POST['cambiarClave'])){
         include 'conexion.php';
         $usuario=$_POST['txtUsuario'];
         $contrasena=$_POST['txtClaveA'];
@@ -16,15 +16,14 @@
                 $sqlo="UPDATE Usuario SET contrasena='$contrasenaN' WHERE usuario = '$usuario';";
                 $conn->query($sqlo);
                 #Cerrar sesion
-                header('Location: loginPAGE.php');
+                print "Exito, la clave ha sido cambiada";
             }
             else 
             {
-                print "Las clave nueva no coincide";
+                $conexion->printError("La clave nueva no coincide");
             }
         }
         else{
-            print "Usuario y clave no validos";
+            $conexion->printError("Usuario y clave no validos");
         }
     }
-?>
