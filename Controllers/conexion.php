@@ -55,6 +55,6 @@ class connection
 
     public function printError($error)
     {
-        echo '<a style="color:red">' . $error . '</a>';
+        echo '<a style="color:red">' . $error . ' <i class="far fa-frown"></i></a>';
     }
 }

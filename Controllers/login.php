@@ -13,7 +13,7 @@ if (isset($_POST['iniciar'])) {
         $result = $resultado->fetch_row();
         $_SESSION["infoUsuario"] = $result;
         if ($result[0] == 1) {
-                header('Location: Administrador/indexAdmin.php');
+                header('Location: administrador.php');
             } 
             else {
                 header('Location: Usuarios/ventas.php');

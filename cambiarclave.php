@@ -14,8 +14,3 @@
     <?php include './Controllers/cambiarclave.php'; ?>
     <input class="btn btn-lg btn-primary btn-block" name="cambiarClave" type="submit" value="Cambiar clave">
     <input class="btn btn-lg btn-secondary btn-block" name="btnCancelar" type="submit" value="Regresar" formnovalidate>
-    <p class="mt-5 mb-3 text-muted">© 2019 AsTech</p>
-    <i class="fa fa-facebook-official"></i>
-    <i class="fa fa-instagram" aria-hidden="true"></i>
-    <i class="fa fa-whatsapp" aria-hidden="true"></i>
-</form>

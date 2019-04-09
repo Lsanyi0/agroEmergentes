@@ -16,9 +16,3 @@
     <?php include 'Controllers/login.php'; ?>
 
     <input type="submit" class="btn btn-secondary btn-block" name="btCambiarClave" value="Cambiar clave" formnovalidate>
-
-    <p class="mt-5 mb-3 text-muted">© 2019 AsTech</p>
-    <i class="fa fa-facebook-official"></i>
-    <i class="fa fa-instagram" aria-hidden="true"></i>
-    <i class="fa fa-whatsapp" aria-hidden="true"></i>
-</form>
