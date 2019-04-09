@@ -42,8 +42,17 @@
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
         <?php
-          if (isset($_POST['Usuarios'])) {
+          include "./Controllers/conexion.php";
+          if (isset($_POST['Usuarios']) || isset($_POST['borrar'])) {
             include './Administrador/crudUsuarios.php';
+          }
+          else if (isset($_POST['editar']) || isset($_POST['btnEditarU']))
+          {
+            include './Administrador/editarUsuario.php';
+          }
+          else if (isset($_POST['crearUsuario']) || isset($_POST['btnModificar']))
+          {
+            include './Administrador/crearUsuarios.php';
           }
           else {
               include './Administrador/adminPrincipal.php';
@@ -54,7 +63,5 @@
   </div>
 
 </body>
-
-<!-- || isset($_POST['btnModificar'] -->
 
 </html>

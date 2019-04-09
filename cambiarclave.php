@@ -11,6 +11,6 @@
     <input type="password" name="txtCalveN" class="form-control" values="" placeholder="Clave nueva" required>
     <label for="txtClaveC" class="sr-only">Clave</label>
     <input type="password" name="txtCalveC" class="form-control" values="" placeholder="Confirmar nueva clave" required>
-    <?php include './Controllers/cambiarclave.php'; ?>
+    <?php include './Controllers/cambiarClaveC.php'; ?>
     <input class="btn btn-lg btn-primary btn-block" name="cambiarClave" type="submit" value="Cambiar clave">
     <input class="btn btn-lg btn-secondary btn-block" name="btnCancelar" type="submit" value="Regresar" formnovalidate>

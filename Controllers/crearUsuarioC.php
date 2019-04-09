@@ -1,6 +1,5 @@
 <?php
 if (isset($_POST['btnModificar'])) {
-    include './Controllers/conexion.php';
     $connex = new connection;
     $conn = $connex->getConnection();
     $usuario = $_POST['usuario'];
