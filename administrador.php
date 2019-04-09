@@ -42,8 +42,8 @@
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
         <?php
-          if (isset($_POST['Usuarios']) || isset($_POST['btnModificar'])) {
-            include './Administrador/crearUsuarios.php';
+          if (isset($_POST['Usuarios'])) {
+            include './Administrador/crudUsuarios.php';
           }
           else {
               include './Administrador/adminPrincipal.php';
@@ -54,5 +54,7 @@
   </div>
 
 </body>
+
+<!-- || isset($_POST['btnModificar'] -->
 
 </html>

@@ -57,4 +57,8 @@ class connection
     {
         echo '<a style="color:red">' . $error . ' <i class="far fa-frown"></i></a>';
     }
+    public function printOK($OK)
+    {
+        echo '<a style="color: rgb(156, 212, 173)">' . $OK . ' <i class="fas fa-thumbs-up"></i></a>';
+    }
 }

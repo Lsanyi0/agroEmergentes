@@ -19,5 +19,6 @@ if (isset($_POST['btnModificar'])) {
             $connex->printError("El nombre de usuario ya existe");
         } else if ($resultado->num_rows< 1 && $resultado->num_rows >= 0) {
         $conn->query($sql);
+        $connex->printOK("Usuario creado correctamente");
     }
 }
