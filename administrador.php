@@ -25,7 +25,7 @@ if (!isset($_SESSION["infoUsuario"])) {
 <body>
   <form action="/agroEmergentes/Controllers/logout.php" id="logoff" method="POST">
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand" style="width: 200px; text-align: center" href="administador.php"><img src="img/palmera.png" alt width="24" alt height="24"> Las palmeras</a>
+      <a class="navbar-brand" style="width: 200px; text-align: center" href="administrador.php"><img src="img/palmera.png" alt width="24" alt height="24"> Las palmeras</a>
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
           <button type="submit" class="btn btn-dark" style="width: 100%; border-radius: 0px" name="cerrar">Cerrar sesion</button>
@@ -62,17 +62,26 @@ if (!isset($_SESSION["infoUsuario"])) {
     include "./Controllers/conexion.php";
     if (isset($_POST['Usuarios']) || isset($_POST['borrar'])) {
       include './Administrador/crudUsuarios.php';
+    } else if (isset($_POST['editarP']) || isset($_POST['btnEditarU'])) {
+      include './Administrador/editarProducto.php';
     } else if (isset($_POST['editar']) || isset($_POST['btnEditarU'])) {
       include './Administrador/editarUsuario.php';
     } else if (isset($_POST['crearUsuario']) || isset($_POST['btnModificar'])) {
       include './Administrador/crearUsuarios.php';
     } else if (isset($_POST['Productos'])) {
       include './Administrador/crudProductos.php';
-    } else if (isset($_POST['crearProducto']) || isset($_POST['btnModificarP'])) {
+    } else if (isset($_POST['crearProducto']) || isset($_POST['btnGuardarP'])) {
       include './Administrador/crearProducto.php';
+    } else if (isset($_POST['editarP']) || isset($_POST['btnModificarP'])) {
+      include './Administrador/editarProducto.php';
+    } else if (isset($_POST['Inventario'])) {
+      include './Administrador/inventario.php';
     } else if (isset($_POST['Ventas'])) {
       include 'ventas.php';
-    } else {
+    } else if (isset($_POST['Regresar'])) {
+      include './Administrador/adminPrincipal.php';
+    }
+    else {
       include './Administrador/adminPrincipal.php';
     }
     ?>

@@ -16,7 +16,7 @@ if (isset($_POST['iniciar'])) {
                 header('Location: administrador.php');
             } 
             else {
-                header('Location: Usuarios/ventas.php');
+                header('Location: ventas.php');
             }
     }
     else {

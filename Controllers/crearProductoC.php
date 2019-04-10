@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['btnModificarP'])) {
+if (isset($_POST['btnGuardarP'])) {
     $connex = new connection;
     $conn = $connex->getConnection();
     $producto = $_POST['producto'];

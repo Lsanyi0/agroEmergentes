@@ -43,11 +43,11 @@ include './Controllers/editarUsuarioC.php';
       <div class="row">
         <div class="form-group col-md-6">
           <label for="txtProducto" class="textoN">Usuario</label>
-          <input type="text" name="usuario" class="form-control producto" value="<?php echo $result[3] ?>" readonly>
+          <input type="text" name="usuario" class="form-control producto" value="<?php echo $result[3] ?>" readonly required>
         </div>
         <div class="form-group col-md-6">
           <label for="contrasena" class="textoN">Contraseña</label>
-          <input type="password" name="contrasena" class="form-control producto" value="<?php echo $result[4] ?>">
+          <input type="password" name="contrasena" class="form-control producto" value="<?php echo $result[4] ?>" required>
         </div>
       </div>
       <div class="d-flex justify-content-around">
@@ -56,7 +56,7 @@ include './Controllers/editarUsuarioC.php';
       <div class="d-flex justify-content-around" style="padding-top: 10px">
         <button type="submit" class="btn <?php if ($success == 1) echo 'btn-success'; else echo 'btn-info' ?> col-md-3" value="<?php echo $result[0]; ?>" name="btnEditarU">Guardar cambios</button>
         <input type="reset" class="btn btn-warning col-md-3" value="Cancelar" name="btnCancelar">
-        <input type="submit" class="btn btn-outline-danger col-md-3" value="Regresar" name="Usuarios">
+        <input type="submit" class="btn btn-outline-danger col-md-3" value="Regresar" name="Usuarios" formnovalidate>
       </div>
     </form>
   </div>

@@ -24,7 +24,7 @@ if (!isset($_SESSION["infoUsuario"])) {
       <div class="row">
         <div class="form-group col-md-6">
           <label for="txtProducto" class="textoN">Nombre</label>
-          <input type="text" name="nombre" class="form-control producto">
+          <input type="text" name="nombre" class="form-control producto" autofocus>
         </div>
         <div class="form-group col-md-6">
           <label for="txtCantidad" class="textoN">Apellido</label>
@@ -34,11 +34,11 @@ if (!isset($_SESSION["infoUsuario"])) {
       <div class="row">
         <div class="form-group col-md-6">
           <label for="txtProducto" class="textoN">Usuario</label>
-          <input type="text" name="usuario" class="form-control producto">
+          <input type="text" name="usuario" class="form-control producto" required>
         </div>
         <div class="form-group col-md-6">
           <label for="contrasena" class="textoN">Contraseña</label>
-          <input type="password" name="contrasena" class="form-control producto">
+          <input type="password" name="contrasena" class="form-control producto" required>
         </div>
       </div>
       <div class="d-flex justify-content-center" style="padding-top: 10px">
@@ -49,7 +49,7 @@ if (!isset($_SESSION["infoUsuario"])) {
       <div class="d-flex justify-content-around" style="padding-top: 10px">
         <input type="submit" class="btn btn-info col-md-3" value="Crear" name="btnModificar">
         <input type="reset" class="btn btn-warning col-md-3" value="Cancelar" name="btnCancelar">
-        <input type="submit" class="btn btn-outline-danger col-md-3" value="Regresar" name="Usuarios">
+        <input type="submit" class="btn btn-outline-danger col-md-3" value="Regresar" name="Regresar" formnovalidate>
       </div>
     </form>
   </div>
