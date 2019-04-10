@@ -8,13 +8,11 @@
     <link rel="stylesheet" type="text/css" media="screen" href="lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/singin.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    
+
     <?php
-        if (isset($_POST['cambiarClave']) || isset($_POST['btCambiarClave'])) {
-            include 'cambiarclave.php';
-        }
-        else 
-        {
+    if (isset($_POST['cambiarClave']) || isset($_POST['btCambiarClave'])) {
+        include 'cambiarclave.php';
+    } else {
             include 'login.php';
         }
     ?>
@@ -22,8 +20,8 @@
     <i class="fab fa-linux"></i>
     <i class="fab fa-windows"></i>
     <i class="fab fa-apple" aria-hidden="true"></i>
-    
-</form>
-</body>
+
+    </form>
+    </body>
 
 </html>

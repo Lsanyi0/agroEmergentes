@@ -19,38 +19,13 @@ class connection
     {
         $this->conn = new mysqli($this->host, $this->user, $this->pass, $this->db);
         if ($this->conn->connect_error) {
-            exit('Error al conectar con la base de datos');
+            $this->printError('Error al conectar con la base de datos');
         }
     }
 
     public function getConnection()
     {
         return $this->conn;
-    }
-
-    public function usuariosA($sql)
-    {
-        // $usuarios;
-        $n = 0;
-        $resultado = $this->conn->query($sql);
-        while ($datos = $resultado->fetch_assoc()) {
-            $usuarios[$n] = $datos['Usuarios'];
-            $n++;
-            echo $usuarios[$n];
-        }
-    }
-
-    public function crearUsu($sql)
-    {
-        $resultado = $this->conn->query($sql);
-
-        if ($resultado) {
-
-            print "funco";
-            header('Location: ./indexAdmin.php');
-        } else {
-            $this->printError("no funco");
-        }
     }
 
     public function printError($error)

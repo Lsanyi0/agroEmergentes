@@ -1,3 +1,15 @@
+<?php
+if(session_status() == PHP_SESSION_NONE){session_start();}
+if (!isset($_SESSION["infoUsuario"])) {
+  header("location: /agroEmergentes/");
+} else if (isset($_SESSION["infoUsuario"]))
+{
+  if ($_SESSION["infoUsuario"][0]==0)
+  {
+    header("location: /agroEmergentes/ventas.php");
+  }
+}
+?>
 <form id="adminPrincipal" action="" method="POST">
   <div style="padding-top: 150px">
     <div class="container">

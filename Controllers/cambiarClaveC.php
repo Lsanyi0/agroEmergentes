@@ -15,7 +15,7 @@
             if ($contrasenaN == $contrasenaC){
                 $sqlo="UPDATE Usuario SET contrasena='$contrasenaN' WHERE usuario = '$usuario';";
                 $conn->query($sqlo);
-                #Cerrar sesion
+                session_destroy();
                 print "Exito, la clave ha sido cambiada";
             }
             else 

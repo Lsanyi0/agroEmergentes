@@ -1,6 +1,10 @@
-<!DOCTYPE html>
+<?php
+if(session_status() == PHP_SESSION_NONE){session_start();}
+if (!isset($_SESSION["infoUsuario"])) {
+  header("location: /agroEmergentes/");
+} else if (isset($_SESSION["infoUsuario"]))
+?>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

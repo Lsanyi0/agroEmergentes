@@ -5,9 +5,7 @@ if (isset($_POST['btnModificar'])) {
     $usuario = $_POST['usuario'];
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
-    $salario = $_POST['salario'];
     $contrasena = $_POST['contrasena'];
-    $dui = $_POST['dui'];
     $tipo = $_POST['tipo'];
 
 

@@ -1,3 +1,15 @@
+<?php
+if(session_status() == PHP_SESSION_NONE){session_start();}
+if (!isset($_SESSION["infoUsuario"])) {
+  header("location: /agroEmergentes/");
+} else if (isset($_SESSION["infoUsuario"]))
+{
+  if ($_SESSION["infoUsuario"][0]==0)
+  {
+    header("location: /agroEmergentes/ventas.php");
+  }
+}
+?>
 <div class="row contenido">
   <div class="col-md-12" style="padding-top: 10px">
     <form action="" id="usuarios" method="POST">
@@ -27,22 +39,6 @@
         <div class="form-group col-md-6">
           <label for="contrasena" class="textoN">Contraseña</label>
           <input type="password" name="contrasena" class="form-control producto">
-        </div>
-      </div>
-      <div class="row">
-        <div class="form-group col-md-6">
-          <label for="txtCantidad" class="textoN">Telefono</label>
-          <input type="tel" name="telefono" class="form-control producto">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="txtCantidad" class="textoN">DUI</label>
-        <input type="text" name="dui" class="form-control producto">
-      </div>
-      <div class="row">
-        <div class="form-group col-md-6">
-          <label for="txtCantidad" class="textoN">Salario</label>
-          <input type="text" name="salario" class="form-control producto">
         </div>
       </div>
       <div class="d-flex justify-content-center" style="padding-top: 10px">
