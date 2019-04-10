@@ -80,8 +80,9 @@ if (!isset($_SESSION["infoUsuario"])) {
       include 'ventas.php';
     } else if (isset($_POST['Regresar'])) {
       include './Administrador/adminPrincipal.php';
-    }
-    else {
+    } else if (isset($_POST['Compras'])) {
+      include './Administrador/crudCompras.php';
+    } else {
       include './Administrador/adminPrincipal.php';
     }
     ?>
