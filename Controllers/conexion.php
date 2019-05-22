@@ -9,9 +9,9 @@ class connection
 
     public function __construct()
     {
-        $this->user = "root";
-        $this->host = "localhost";
-        $this->pass = "resident00RE";
+        $this->user = "servroot@servphp";
+        $this->host = "servphp.mysql.database.azure.com";
+        $this->pass = "servR00t";
         $this->db = "agroe";
         $this->connect();
     }
